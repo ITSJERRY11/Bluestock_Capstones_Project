@@ -1,3 +1,31 @@
+CREATE TABLE dim_date (
+    date_id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    date           TEXT,
+    year           INTEGER,
+    month          INTEGER,
+    quarter        INTEGER,
+    day_of_week    TEXT,
+    is_weekday     INTEGER
+);
+
+CREATE TABLE dim_fund (
+    amfi_code           INTEGER PRIMARY KEY,
+    fund_house          TEXT,
+    scheme_name         TEXT,
+    category            TEXT,
+    sub_category         TEXT,
+    plan                TEXT,
+    launch_date         TEXT,
+    benchmark           TEXT,
+    expense_ratio_pct   REAL,
+    exit_load_pct       REAL,
+    min_sip_amount      REAL,
+    min_lumpsum_amount  REAL,
+    fund_manager        TEXT,
+    risk_category       TEXT,
+    sebi_category_code  TEXT
+);
+
 CREATE TABLE fact_portfolio (
     id                   INTEGER PRIMARY KEY AUTOINCREMENT,
     amfi_code            INTEGER,
