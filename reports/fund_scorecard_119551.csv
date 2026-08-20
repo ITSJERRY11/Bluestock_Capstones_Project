@@ -1,0 +1,7 @@
+Metric,Raw Value,Score (0-100),Weight,Weighted Contribution
+CAGR,25.80%,100.0,20%,20.0
+Sharpe Ratio,1.21,80.6,20%,16.1
+Sortino Ratio,1.26,72.1,15%,10.8
+Alpha,16.49%,100.0,20%,20.0
+Max Drawdown,-15.01%,50.0,15%,7.5
+Tracking Error,19.12%,23.5,10%,2.4
